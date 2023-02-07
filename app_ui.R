@@ -30,4 +30,4 @@ ui <- fluidPage(
       fluidRow("Best project ever")
     )
   )
-)
+) 

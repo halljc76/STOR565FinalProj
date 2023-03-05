@@ -26,6 +26,12 @@ ui <- fluidPage(
       )
     ),
     tabPanel(
+      "Biweekly Reports",
+      hr(),
+      
+      dataTableOutput("biweek")
+    ),
+    tabPanel(
       "Modeling",
       fluidRow("Best project ever")
     )

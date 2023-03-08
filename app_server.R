@@ -1,6 +1,10 @@
 server <- function(input, output, session) {
-  repoLink <- a("GitHub Link", href = "https://github.com/halljc76/STOR565FinalProj")
+  repoLink <- a("GitHub Link (Ctrl + Click to Open in New Tab)", href = "https://github.com/halljc76/STOR565FinalProj")
   output$repo <- renderUI({tagList("", repoLink)})
+  
+  ppLink <- a("Proposal Link (Ctrl + Click to Open in New Tab)", 
+              href = "https://drive.google.com/file/d/13eKaqWjCAZRSZxaCNFtPLY9DD3c5YLmu/view?usp=share_link")
+  output$projprop <- renderUI({tagList("", ppLink)})
   
   reports <- read.csv("www/reports.csv", stringsAsFactors = FALSE)
   

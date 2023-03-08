@@ -8,7 +8,7 @@ ui <- fluidPage(
         h1("Welcome to our project!"),
         hr(),
         h4("This website houses our machine learning project necessary to complete STOR565: Introduction to Machine Learning. \
-            The accompanying tabs and interactive features will introduce to you the topic of [put the topic here], offer \
+            The accompanying tabs and interactive features will introduce to you the topic (and use case) of image classification, offer \
             insight into how we chose to model the scenario(s), and (potentially) allow the user to alter parameters 
             of model(s) to observe changes in performance.")
       ),
@@ -17,6 +17,12 @@ ui <- fluidPage(
         h2("About Us"),
         hr(),
         h3("[Include some stuff here if we want to.]")
+      ),
+      
+      fluidRow(
+        h3("Project Proposal"),
+        hr(),
+        h4(uiOutput("projprop"))
       ),
       
       fluidRow(

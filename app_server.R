@@ -3,7 +3,7 @@ server <- function(input, output, session) {
   output$repo <- renderUI({tagList("", repoLink)})
   
   ppLink <- a("Proposal Link (Ctrl + Click to Open in New Tab)", 
-              href = "https://drive.google.com/file/d/13eKaqWjCAZRSZxaCNFtPLY9DD3c5YLmu/view?usp=share_link")
+              href = "https://drive.google.com/file/d/19qLlPcrGPepbB-L8_G_wG7GBkmErAqMr/view?usp=share_link")
   output$projprop <- renderUI({tagList("", ppLink)})
   
   reports <- read.csv("www/reports.csv", stringsAsFactors = FALSE)
